@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Lixali cube mark">
+  <defs>
+    <linearGradient id="cubeTop" gradientUnits="userSpaceOnUse" x1="100" y1="20" x2="169.28" y2="60">
+      <stop offset="0" stop-color="#510F33"/>
+      <stop offset="0.5" stop-color="#9E0F60"/>
+      <stop offset="1" stop-color="#DA0A7A"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" gradientUnits="userSpaceOnUse" x1="30.72" y1="60" x2="100" y2="180">
+      <stop offset="0" stop-color="#CA6827"/>
+      <stop offset="0.45" stop-color="#964C25"/>
+      <stop offset="1" stop-color="#C22627"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" gradientUnits="userSpaceOnUse" x1="169.28" y1="60" x2="169.28" y2="140">
+      <stop offset="0" stop-color="#D80E7C"/>
+      <stop offset="0.4" stop-color="#C22627"/>
+      <stop offset="0.75" stop-color="#8F1D2C"/>
+      <stop offset="1" stop-color="#5A152E"/>
+    </linearGradient>
+    <radialGradient id="cubeHub" gradientUnits="userSpaceOnUse" cx="100" cy="102" r="16">
+      <stop offset="0" stop-color="#C32228"/>
+      <stop offset="0.6" stop-color="#A01E28"/>
+      <stop offset="1" stop-color="#7F1926"/>
+    </radialGradient>
+  </defs>
+
+  <g stroke="#F4CBE0" stroke-opacity="0.35" stroke-width="1.2" stroke-linejoin="round">
+    <path d="M 30.72 60.00 L 30.72 140.00 L 100.00 180.00 Q 109.00 130.40 93.10 104.00 Q 100.00 100.00 100.00 92.00 Q 69.17 92.59 30.72 60.00 Z" fill="url(#cubeLeft)"/>
+    <path d="M 169.28 60.00 L 169.28 140.00 L 100.00 180.00 Q 109.00 130.40 93.10 104.00 Q 100.00 100.00 106.90 104.00 Q 121.83 77.01 169.28 60.00 Z" fill="url(#cubeRight)"/>
+    <path d="M 100.00 20.00 L 169.28 60.00 Q 121.83 77.01 106.90 104.00 Q 100.00 100.00 100.00 92.00 Q 69.17 92.59 30.72 60.00 Z" fill="url(#cubeTop)"/>
+  </g>
+  <!-- hub cap: masks the seam junction, matches the crimson core in the reference -->
+  <path d="M 100.00 88.80 Q 107.00 95.94 109.66 105.60 Q 100.00 108.12 90.34 105.60 Q 93.00 95.94 100.00 88.80 Z" fill="url(#cubeHub)"/>
+</svg>
